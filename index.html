@@ -1,83 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FehmYanga Enterprise</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FehmYanga Enterprise | Sugarcane, Maize &amp; Vegetables from Malava, Kakamega</title>
+<meta name="description" content="FehmYanga Enterprise grows and supplies fresh sugarcane, maize and vegetables from Malava, Kakamega County, Kenya. Sustainable farming, straight from our fields to you.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Fehmyanga Logo">
-            <h1>FehmYanga Enterprise</h1>
-        </div>
 
-        <nav>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a class="logo" href="#top">
+            <img src="logo.png" alt="FehmYanga Enterprise logo">
+            <span class="logo-text">FehmYanga<em>Enterprise</em></span>
+        </a>
+
+        <nav class="site-nav" id="siteNav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Farm Gallery</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Produce</a></li>
+                <li><a href="#gallery">Farm Gallery</a></li>
+                <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
             </ul>
-            
         </nav>
-    </header>
 
-    <section class="hero">
-        <h2>Fresh Farm Produce</h2>
-        <p>Quality Agricultural Products Grown With Care.</p>
-        <button onclick="learnMore()">Learn More</button>
-    </section>
-
-    <section class="About">
-        <h2>About FehmYanga</h2>
-        <p>
-            FehmYanga is a modern Farm dedicated at producing quality agricultural products <br>
-             using sustainable agricultural practices. 
-        </p>
-    </section>
-
-    <section class="products">
-    <h2>Our Products</h2>
-
-    <div class="product-container">
-
-        <div class="product">
-            <h3>Sugarcane</h3>
-            <p>Fresh sugarcane harvested directly from the farm.</p>
-        </div>
-
-        <div class="product">
-            <h3>Maize</h3>
-            <p>High quality maize for food and livestock.</p>
-        </div>
-
-        <div class="product">
-            <h3>Vegetables</h3>
-            <p>Organic vegetables grown naturally.</p>
-        </div>
-
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-</section>
+</header>
 
-<footer>
-    <p>© 2026 FehmYanga Enterprise | All Rights Reserved</p>
-</footer>
+<main id="main">
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
+    <section class="hero" id="top">
+        <div class="hero-rows" aria-hidden="true">
+            <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+                <g class="cane-row cane-row--1">
+                    <use href="#cane-stalk" x="40"></use><use href="#cane-stalk" x="140"></use><use href="#cane-stalk" x="240"></use><use href="#cane-stalk" x="340"></use><use href="#cane-stalk" x="440"></use><use href="#cane-stalk" x="540"></use><use href="#cane-stalk" x="640"></use><use href="#cane-stalk" x="740"></use><use href="#cane-stalk" x="840"></use><use href="#cane-stalk" x="940"></use><use href="#cane-stalk" x="1040"></use><use href="#cane-stalk" x="1140"></use>
+                </g>
+                <g class="cane-row cane-row--2">
+                    <use href="#cane-stalk" x="0"></use><use href="#cane-stalk" x="100"></use><use href="#cane-stalk" x="200"></use><use href="#cane-stalk" x="300"></use><use href="#cane-stalk" x="400"></use><use href="#cane-stalk" x="500"></use><use href="#cane-stalk" x="600"></use><use href="#cane-stalk" x="700"></use><use href="#cane-stalk" x="800"></use><use href="#cane-stalk" x="900"></use><use href="#cane-stalk" x="1000"></use><use href="#cane-stalk" x="1100"></use>
+                </g>
+                <defs>
+                    <g id="cane-stalk">
+                        <path d="M0,120 C6,90 -4,60 2,30 C6,10 -2,-10 4,-30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M2,10 L18,-4 M2,-6 L-14,-16 M4,-24 L18,-34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    </g>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <p class="eyebrow">Malava &middot; Kakamega County &middot; Kenya</p>
+            <h1>Grown in Malava.<br>Delivered with care.</h1>
+            <p class="hero-lead">FehmYanga Enterprise farms sugarcane, maize and vegetables the way our neighbours have always farmed &mdash; by hand, in season, and without shortcuts.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Get in touch</a>
+                <a href="#products" class="btn btn-ghost">See our produce</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-copy">
+                <p class="eyebrow">About the farm</p>
+                <h2>A working farm, not a brand built around one</h2>
+                <p>FehmYanga Enterprise is a family-run agribusiness on the Kakamega&ndash;Webuye Road in Malava. We grow sugarcane, maize and vegetables on land we know well, using practices that keep the soil productive season after season &mdash; crop rotation, minimal chemical input, and harvesting only when produce is ready, not when it's convenient.</p>
+                <p>What leaves our farm gate is what came out of our fields that week. No middlemen holding stock, no guessing how old it is.</p>
+            </div>
+            <dl class="about-facts">
+                <div>
+                    <dt>Location</dt>
+                    <dd>Kakamega&ndash;Webuye Road, Malava, Kakamega County</dd>
+                </div>
+                <div>
+                    <dt>What we grow</dt>
+                    <dd>Sugarcane, maize, vegetables</dd>
+                </div>
+                <div>
+                    <dt>How we farm</dt>
+                    <dd>Rotated fields, sustainable inputs, hand-tended</dd>
+                </div>
+                <div>
+                    <dt>Open</dt>
+                    <dd>Monday &ndash; Saturday, 8:00 AM &ndash; 5:00 PM</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <p class="eyebrow center">Our produce</p>
+        <h2 class="center">What we grow</h2>
+
+        <div class="product-grid">
+
+            <article class="product-card">
+                <div class="product-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64"><path d="M32 58 C30 46 34 40 30 30 C27 22 33 16 30 6" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><path d="M30 30 L20 24 M31 21 L41 15 M30 40 L19 36 M31 50 L42 46" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Sugarcane</h3>
+                <p class="product-tag">12&ndash;18 month cycle</p>
+                <p>Sweet, fibrous cane harvested from mature stalks in our own fields &mdash; sold fresh, cut to order.</p>
+            </article>
+
+            <article class="product-card">
+                <div class="product-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64"><ellipse cx="32" cy="32" rx="14" ry="24" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M22 14 Q32 20 22 28 M42 14 Q32 20 42 28 M22 36 Q32 42 22 50 M42 36 Q32 42 42 50" stroke="currentColor" stroke-width="2.5" fill="none"/></svg>
+                </div>
+                <h3>Maize</h3>
+                <p class="product-tag">Long &amp; short rains harvests</p>
+                <p>Quality grain for household use, milling and livestock feed, grown across our long and short rains cycles.</p>
+            </article>
+
+            <article class="product-card">
+                <div class="product-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64"><path d="M32 56 C32 40 32 30 32 18" stroke="currentColor" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M32 34 C20 30 16 18 20 8 C30 10 36 20 32 34 Z M32 44 C44 40 48 28 44 18 C34 20 28 30 32 44 Z" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+                </div>
+                <h3>Vegetables</h3>
+                <p class="product-tag">Year-round</p>
+                <p>Naturally grown seasonal greens and vegetables, planted in rotation so something is always ready to pick.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="why" id="why">
+        <p class="eyebrow center">Why buy from us</p>
+        <h2 class="center">Straight from the field</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>No middlemen</h3>
+                <p>You buy from the people who planted, tended and harvested it &mdash; not a reseller several hands removed.</p>
+            </div>
+            <div class="why-card">
+                <h3>Sustainable practice</h3>
+                <p>Rotated fields and measured inputs keep our land productive for the long run, not just this season.</p>
+            </div>
+            <div class="why-card">
+                <h3>Bulk or small orders</h3>
+                <p>We supply households, schools and traders alike &mdash; get in touch and we'll work out quantities together.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <p class="eyebrow center">Farm gallery</p>
+        <h2 class="center">A look at the fields</h2>
+        <p class="gallery-note">Photos from the farm are on their way &mdash; check back soon, or ask us for a visit.</p>
+        <div class="gallery-grid">
+            <div class="gallery-frame gallery-frame--cane" aria-hidden="true"></div>
+            <div class="gallery-frame gallery-frame--maize" aria-hidden="true"></div>
+            <div class="gallery-frame gallery-frame--veg" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <p class="eyebrow center">Contact</p>
+        <h2 class="center">Talk to the farm</h2>
         <div class="contact-grid">
             <div class="contact-details">
-                <p><strong>Address:</strong> FehmYanga Farm, Kakamega - Webuye Road, Malava, Kakamega County,  Kenya</p>
-                <p><strong>Phone:</strong> +254 732 700 881</p>
-                <p><strong>Email:</strong> duncanlisu558@gmail.com</p>
-                <p><strong>Hours:</strong> Mon–Sat: 8:00 AM – 5:00 PM</p>
+                <p><strong>Address</strong><br>FehmYanga Farm, Kakamega&ndash;Webuye Road, Malava, Kakamega County, Kenya</p>
+                <p><strong>Phone</strong><br><a href="tel:+254732700881">+254 732 700 881</a></p>
+                <p><strong>Email</strong><br><a href="mailto:duncanlisu558@gmail.com">duncanlisu558@gmail.com</a></p>
+                <p><strong>Hours</strong><br>Monday &ndash; Saturday, 8:00 AM &ndash; 5:00 PM</p>
             </div>
 
             <div class="contact-form">
-                <form id="contactForm">
+                <form id="contactForm" novalidate>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
 
@@ -85,17 +184,34 @@
                     <input type="email" id="email" name="email" placeholder="Your email" required>
 
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="What are you looking for?" required></textarea>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit">Send message</button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </div>
     </section>
 
-<script src="javascript.js"></script>
+</main>
 
-    
-    
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="logo.png" alt="FehmYanga Enterprise logo">
+            <p>FehmYanga Enterprise<br>Malava, Kakamega County</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Produce</a>
+            <a href="#gallery">Farm Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    <p class="footer-copy">&copy; 2026 FehmYanga Enterprise. All rights reserved.</p>
+</footer>
+
+<script src="javascript.js"></script>
 </body>
 </html>
